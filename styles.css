@@ -48,7 +48,8 @@ body {
     background-image: url(images/background-pattern-desktop.svg);
 }
 
-img, svg {
+img,
+svg {
     max-width: 100%;
     display: block;
 }
@@ -99,4 +100,27 @@ button:hover {
 
 .accordion-item .icons img {
     min-width: 30px;
+}
+
+.accordion-item .icons .minus-icon {
+    display: none;
+}
+
+.accordion-description {
+    max-height: 0;
+    overflow: hidden;
+    background-color: var(--white);
+
+    transition: max-height 200ms ease;
+}
+
+.accordion-description p {
+    padding: 1.5rem 0;
+    color: var(--grayish-purple);
+}
+
+@media (max-width: 540px) {
+    body {
+        background-image: url(images/background-pattern-mobile.svg);
+    }
 }
