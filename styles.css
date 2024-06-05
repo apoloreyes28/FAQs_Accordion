@@ -5,8 +5,8 @@
     color: mediumorchid;
 
     position: absolute;
-    right: 0;
-    bottom: 2px;
+    bottom: 0;
+    right: 2px;
 }
 
 .attribution a {
@@ -37,6 +37,8 @@ body {
     display: grid;
     place-content: center;
 
+    position: relative;
+
     min-height: 100vh;
     border: 1px solid black;
 
@@ -45,7 +47,7 @@ body {
     background-color: var(--light-pink);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(images/background-pattern-desktop.svg);
+    background-image: url(assets/images/background-pattern-desktop.svg);
 }
 
 img,
@@ -82,6 +84,7 @@ button:hover {
     margin: 1rem;
     border-radius: 1rem;
     background-color: var(--white);
+    margin-bottom: 50px;
 }
 
 .faq-headline {
@@ -121,6 +124,26 @@ button:hover {
 
 @media (max-width: 540px) {
     body {
-        background-image: url(images/background-pattern-mobile.svg);
+        background-image: url(assets/assets/images/background-pattern-mobile.svg);
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        margin-bottom: 45px;
+    }
+    
+    .attribution {
+        display: flex;
+        flex-wrap: wrap;
+
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 350px) {
+    .attribution {
+        flex-wrap: wrap;
+        font-size: 10px;
     }
 }
