@@ -1,0 +1,102 @@
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    color: mediumorchid;
+
+    position: absolute;
+    right: 0;
+    bottom: 2px;
+}
+
+.attribution a {
+    padding: 1px 2px;
+    margin-right: 2.5px;
+    border-radius: 4px;
+    color: hsl(228, 45%, 44%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* creamos variables para los colores */
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-pink: hsl(275, 100%, 97%);
+    --grayish-purple: hsl(292, 16%, 49%);
+    --dark-purple: hsl(292, 42%, 14%)
+}
+
+body {
+    width: 100%;
+
+    display: grid;
+    place-content: center;
+
+    min-height: 100vh;
+    border: 1px solid black;
+
+    font-family: 'Work Sans', sans-serif;
+
+    background-color: var(--light-pink);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(images/background-pattern-desktop.svg);
+}
+
+img, svg {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    padding: 1rem 0;
+    border: 0;
+    gap: 1rem;
+
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: transparent;
+}
+
+button:hover {
+    color: purple;
+}
+
+.container {
+    max-width: 800px;
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+    background-color: var(--white);
+}
+
+.faq-headline {
+    display: flex;
+    gap: 2rem;
+}
+
+.faq-headline h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.accordion-container .accordion-item:not(:last-child) {
+    border-bottom: 2px solid var(--light-pink);
+}
+
+.accordion-item .icons img {
+    min-width: 30px;
+}
